@@ -1,0 +1,11 @@
+﻿<Window x:Class="SkeletonInDepth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid  Width="640" Height="480">
+        <Image x:Name="ColorImage"  />
+        <Image x:Name="DepthImage" Visibility="Hidden"/>
+        <Grid x:Name="LayoutRoot" Background="Transparent" >
+        </Grid>
+    </Grid>
+</Window>

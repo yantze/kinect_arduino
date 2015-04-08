@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basic", "basic\basic.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interaction", "interaction\interaction.csproj", "{9E7049E7-950A-4514-94FD-023C43562620}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkeletonInDepth", "SkeletonInDepth\SkeletonInDepth.csproj", "{8C92218D-EA6B-4ACD-A929-0EF2BB97D656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9E7049E7-950A-4514-94FD-023C43562620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E7049E7-950A-4514-94FD-023C43562620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E7049E7-950A-4514-94FD-023C43562620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C92218D-EA6B-4ACD-A929-0EF2BB97D656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C92218D-EA6B-4ACD-A929-0EF2BB97D656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C92218D-EA6B-4ACD-A929-0EF2BB97D656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C92218D-EA6B-4ACD-A929-0EF2BB97D656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
