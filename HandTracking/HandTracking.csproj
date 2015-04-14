@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C92218D-EA6B-4ACD-A929-0EF2BB97D656}</ProjectGuid>
+    <ProjectGuid>{E13F7492-1837-44B4-80C9-7CDEBE4169DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SkeletonInDepth</RootNamespace>
-    <AssemblyName>SkeletonInDepth</AssemblyName>
+    <RootNamespace>HandTracking</RootNamespace>
+    <AssemblyName>HandTracking</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -37,6 +37,10 @@
     <Reference Include="Coding4Fun.Kinect.Wpf">
       <HintPath>..\..\..\VS11\kinect\Coding4Fun.Kinect.Toolkit\Coding4Fun.Kinect.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\VS11\kinect\Coding4Fun.Kinect.Toolkit\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Kinect.Toolkit">
       <HintPath>C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.8.0\Assemblies\Microsoft.Kinect.Toolkit.dll</HintPath>
@@ -49,7 +53,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -67,6 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WaveGesture.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,6 +110,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HandTrackingFramework\HandTrackingFramework.csproj">
+      <Project>{7b232902-1647-4f90-ae9b-548f0e8d975a}</Project>
+      <Name>HandTrackingFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

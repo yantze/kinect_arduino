@@ -17,6 +17,7 @@ using Microsoft.Kinect;
 using Microsoft.Kinect.Toolkit;
 using Microsoft.Kinect.Toolkit.Controls;
 using Microsoft.Kinect.Toolkit.Interaction;
+using Coding4Fun.Kinect.Wpf;
 
 namespace SkeletonInDepth
 {

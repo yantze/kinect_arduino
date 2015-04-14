@@ -12,11 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.Kinect;
 using System.IO;
 using System.Drawing;
 
-
+using Microsoft.Kinect;
+using Coding4Fun.Kinect.Wpf;
 
 namespace basic
 {
@@ -102,12 +102,12 @@ namespace basic
             {
                 ColorImageStream colorStream = this.kinect.ColorStream;
                 kinectSensor.ColorStream.Enable();
-                this.colorImageBitmap = new WriteableBitmap(colorStream.FrameWidth,
-                    colorStream.FrameHeight, 96,96,PixelFormats.Bgr32, null);
-                this.colorImageBitmapRect = new Int32Rect(0,0, colorStream.FrameWidth,
-                    colorStream.FrameHeight);
-                this.colorImageStride = colorStream.FrameWidth * colorStream.FrameBytesPerPixel;
-                ColorImageElement.Source = this.colorImageBitmap;
+                //this.colorImageBitmap = new WriteableBitmap(colorStream.FrameWidth,
+                //    colorStream.FrameHeight, 96,96,PixelFormats.Bgr32, null);
+                //this.colorImageBitmapRect = new Int32Rect(0,0, colorStream.FrameWidth,
+                //    colorStream.FrameHeight);
+                //this.colorImageStride = colorStream.FrameWidth * colorStream.FrameBytesPerPixel;
+                //ColorImageElement.Source = this.colorImageBitmap;
 
                 kinectSensor.ColorFrameReady += new EventHandler<ColorImageFrameReadyEventArgs>(kinectSensor_ColorFrameReady);
                 kinectSensor.Start();
@@ -128,13 +128,15 @@ namespace basic
             {
                 if (frame != null)
                 {
-                    byte[] pixelData = new byte[frame.PixelDataLength];
-                    frame.CopyPixelDataTo(pixelData);
-                    //ColorImageElement.Source = BitmapImage.Create(frame.Width, frame.Height, 96, 96,
-                    //                                            PixelFormats.Bgr32, null, pixelData,
-                    //                                            frame.Width * frame.BytesPerPixel);
-                    this.colorImageBitmap.WritePixels(this.colorImageBitmapRect, pixelData,
-                        this.colorImageStride, 0);
+                    //byte[] pixelData = new byte[frame.PixelDataLength];
+                    //frame.CopyPixelDataTo(pixelData);
+                    ////ColorImageElement.Source = BitmapImage.Create(frame.Width, frame.Height, 96, 96,
+                    ////                                            PixelFormats.Bgr32, null, pixelData,
+                    ////                                            frame.Width * frame.BytesPerPixel);
+                    //this.colorImageBitmap.WritePixels(this.colorImageBitmapRect, pixelData,
+                    //    this.colorImageStride, 0);
+
+                    ColorImageElement.Source = frame.ToBitmapSource();
 
                 }
             }
