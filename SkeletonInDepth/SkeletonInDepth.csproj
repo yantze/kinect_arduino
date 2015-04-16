@@ -107,6 +107,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HandTrackingFramework\HandTrackingFramework.csproj">
+      <Project>{7b232902-1647-4f90-ae9b-548f0e8d975a}</Project>
+      <Name>HandTrackingFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SerialPortChat\SerialPortChat.csproj">
+      <Project>{08dfdc12-4acf-4901-a668-8f1180dd2bc5}</Project>
+      <Name>SerialPortChat</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

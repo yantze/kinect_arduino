@@ -16,7 +16,19 @@ namespace SerialPortChat
         static bool _continue;
         static SerialPort _serialPort;
 
+        public static void send(string str, string portName, int baudRate)
+        {
+            System.IO.Ports.SerialPort chat = new System.IO.Ports.SerialPort(portName, baudRate);
+            chat.Open();
+            chat.Write(str);
+            chat.Close();
+        }
+
         public static void Main()
+        {
+
+        }
+        public static void Text()
         {
             string name;
             string message;

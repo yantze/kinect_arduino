@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Microsoft.Kinect;
 
-namespace HandTracking
+namespace HandTrackingFramework
 {
     public class WaveGesture
     {

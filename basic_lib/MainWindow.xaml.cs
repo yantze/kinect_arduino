@@ -39,13 +39,20 @@ namespace basic_lib
             this.Loaded += delegate
             {
                 _kinectSensor = KinectSensor.KinectSensors[0];
-                _kinectSensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
-                _kinectSensor.DepthStream.Enable(DepthImageFormat.Resolution320x240Fps30);
+                _kinectSensor.ColorStream.Enable();
+                _kinectSensor.DepthStream.Enable();
+                _kinectSensor.SkeletonStream.Enable();
                 _kinectSensor.ColorFrameReady += ColorFrameReady;
                 _kinectSensor.DepthFrameReady += DepthFrameReady;
-
+                _kinectSensor.SkeletonFrameReady += _kinectSensor_SkeletonFrameReady;
+                
                 _kinectSensor.Start();
             };
+        }
+
+        void _kinectSensor_SkeletonFrameReady(object sender, SkeletonFrameReadyEventArgs e)
+        {
+            
         }
 
 
