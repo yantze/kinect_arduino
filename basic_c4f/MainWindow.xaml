@@ -1,0 +1,14 @@
+﻿<Window x:Class="basic_c4f.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid>
+            <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
+        </Grid>
+        <!--显示特殊的光标-->
+        <k:KinectRegion Name="kinectRegion" Margin="10,123,10,10"></k:KinectRegion>
+        <Image x:Name="ColorImageElement"></Image>
+    </Grid>
+</Window>
