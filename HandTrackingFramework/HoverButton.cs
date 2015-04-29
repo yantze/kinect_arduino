@@ -19,7 +19,7 @@ namespace HandTrackingFramework
             {
                 SetValue(HoverIntervalProperty, value);
             }
-        }
+        } 
 
         public static readonly DependencyProperty HoverIntervalProperty =
             DependencyProperty.Register("HoverInterval", typeof(double), typeof(HoverButton), new UIPropertyMetadata(2000d));

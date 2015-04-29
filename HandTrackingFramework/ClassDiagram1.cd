@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HandTrackingFramework.KinectButton" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABIAAAABAAAABAAAAAAAAACAIAAQAogAAEAIA=</HashCode>
+      <FileName>KinectButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.CursorAdorner" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEEIAAAQADAAAAAAAAAAIASIQAAAAASQEIwIAAAgAA=</HashCode>
+      <FileName>CursorAdorner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.HoverButton" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAQAAAAAACAAAAAAABAAAAAAAAAAAEAAAgAAEAAA=</HashCode>
+      <FileName>HoverButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.KinectCursorEventArgs" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAE=</HashCode>
+      <FileName>KinectCursorEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.KinectCursorManager" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAFASBACCBCAkgEgAgBAIAEAgEBEEEBOQAAAAAAEAQQ=</HashCode>
+      <FileName>KinectCursorManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.KinectInput" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABJBAAAEAAAAAAAAAQBAAACgICAYAIAAEAEIA=</HashCode>
+      <FileName>KinectInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.MagnetButton" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yAAAAAAgBBAAAACAAAgIAAIQAAAAAABAAAAAgAAEAAA=</HashCode>
+      <FileName>MagnetButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.MagneticSlide" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAIAAAAAADAAAIAAAAAQAAACAICABAAAgAkBgAA=</HashCode>
+      <FileName>MagneticSlide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.PushButton" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAABgAAAAAAAAAAAAAEAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>PushButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandTrackingFramework.WaveGesture" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEAQAAAAAAAAAAAAAgAAAAAAIAAAgAAAQA=</HashCode>
+      <FileName>WaveGesture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="HandTrackingFramework.GesturePoint" Collapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAEYAE=</HashCode>
+      <FileName>GesturePoint.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Delegate Name="HandTrackingFramework.KinectCursorEventHandler" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KinectInput.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -16,12 +16,31 @@ namespace SerialPortChat
         static bool _continue;
         static SerialPort _serialPort;
 
-        public static void send(string str, string portName, int baudRate)
+        public string _portName;
+        public int _baudRate;
+
+        public void send(string str)
         {
-            System.IO.Ports.SerialPort chat = new System.IO.Ports.SerialPort(portName, baudRate);
-            chat.Open();
+            System.IO.Ports.SerialPort chat = new System.IO.Ports.SerialPort(_portName, _baudRate);
+
+            try
+            {
+                chat.Open();
+            }
+            catch (System.IO.IOException e)
+            {
+                // 如果没有串口没有打开
+                Console.Write(e.Message);
+                return;
+            }
             chat.Write(str);
             chat.Close();
+        }
+
+        public void init(string portName, int baudRate)
+        {
+            _portName = portName;
+            _baudRate = baudRate;
         }
 
         public static void Main()
@@ -74,6 +93,7 @@ namespace SerialPortChat
             }
 
             readThread.Join();
+            
             _serialPort.Close();
         }
 

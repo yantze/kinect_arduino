@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -114,6 +115,10 @@
     <ProjectReference Include="..\HandTrackingFramework\HandTrackingFramework.csproj">
       <Project>{7b232902-1647-4f90-ae9b-548f0e8d975a}</Project>
       <Name>HandTrackingFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SerialPortChat\SerialPortChat.csproj">
+      <Project>{08dfdc12-4acf-4901-a668-8f1180dd2bc5}</Project>
+      <Name>SerialPortChat</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

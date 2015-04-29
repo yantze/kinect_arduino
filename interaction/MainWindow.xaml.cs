@@ -95,6 +95,8 @@ namespace interaction
                     {
                         args.NewSensor.DepthStream.Range = DepthRange.Near;
                         args.NewSensor.SkeletonStream.EnableTrackingInNearRange = true;
+
+                        // 静态模式
                         args.NewSensor.SkeletonStream.TrackingMode = SkeletonTrackingMode.Seated;
                     }
                     catch (InvalidOperationException)

@@ -6,6 +6,8 @@
     <Grid>
         <Grid>
             <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
+            <!--显示用户的深度信息-->
+            <k:KinectUserViewer VerticalAlignment="Top" HorizontalAlignment="Center"  k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" />
         </Grid>
         <!--显示特殊的光标-->
         <k:KinectRegion Name="kinectRegion" Margin="10,123,10,10">

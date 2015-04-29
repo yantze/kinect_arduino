@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="700" Width="800">
     <Grid>
-        <Image x:Name="ColorImage" Margin="0,0,421,357" />
-        <Image x:Name="DepthImage" Margin="0,312,416,26" />
-        <Image x:Name="SkeletonImage" Margin="376,312,0,26"/>
+        <Image x:Name="ColorImage" Margin="325,398,147,31" />
+        <Image x:Name="DepthImage" Margin="0,398,472,31" />
+        <Image x:Name="SkeletonImage" Margin="0,398,472,31" Opacity="0.32"/>
         <Grid x:Name="LayoutRoot" Background="Transparent" Visibility="Hidden">
         </Grid>
-        <CheckBox  x:Name="checkBoxSeatedMode" Content="CheckBox" HorizontalAlignment="Left" Height="38" Margin="488,24,0,0" VerticalAlignment="Top" Checked="CheckBoxSeatedModeChanged" Unchecked="CheckBoxSeatedModeChanged"/>
+        <CheckBox x:Name="checkBoxSeatedMode" Content="CheckBox" HorizontalAlignment="Left" Height="38" Margin="488,24,0,0" VerticalAlignment="Top" Checked="CheckBoxSeatedModeChanged" Unchecked="CheckBoxSeatedModeChanged"/>
         <StatusBar Grid.Row="3" HorizontalAlignment="Stretch" Name="statusBar" VerticalAlignment="Bottom" Background="White">
             <StatusBarItem Padding="0 0 0 10">
                 <TextBlock Name="statusBarText" Margin="-1 0 0 0">Click 'Seated' to change skeletal pipeline type!</TextBlock>

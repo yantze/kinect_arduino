@@ -111,13 +111,19 @@ namespace SkeletonInDepth
 
         private WaveGesture _WaveGesture;
 
+        private PortChat portChat;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            portChat = new PortChat();
             
+            portChat.init("COM3", 9600);
 
             // Create the drawing group we'll use for drawing
             this.drawingGroup = new DrawingGroup();
+            
 
             // Create an image source that we can use in our image control
             this.imageSource = new DrawingImage(this.drawingGroup);
@@ -361,7 +367,10 @@ namespace SkeletonInDepth
                 {
                     skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
                     skeletonFrame.CopySkeletonDataTo(skeletons);
-                    
+
+                    DateTime startMarker = DateTime.Now;
+                    this._WaveGesture.Update(skeletons, skeletonFrame.Timestamp);
+
                 }
             }
 
@@ -381,8 +390,9 @@ namespace SkeletonInDepth
                             this.DrawBonesAndJoints(skel, dc);
 
                             // 这里获取第一个骨骼的人到摄像头的距离
-                            this.statusBarText.Text = "" + skel.Position.Z + "Inches";
-                            PortChat.send("d"+int(skel.Position.Z));
+                            //this.statusBarText.Text = "" + skel.Position.Z + "Inches";
+                            // 发送串口指令
+                            // portChat.send("d"+skel.Position.Z);
                             
                         }
                         else if (skel.TrackingState == SkeletonTrackingState.PositionOnly)
@@ -552,7 +562,7 @@ namespace SkeletonInDepth
         private void _WaveGesture_GestureDetected(object sender, EventArgs e)
         {
             //listBox1.Items.Add(string.Format("Wave Detected {0}", DateTime.Now.ToLongTimeString()));
-            this.statusWave.Text = "检测到挥手";
+            this.statusBarText.Text = "检测到挥手";
         }
     }
 }
