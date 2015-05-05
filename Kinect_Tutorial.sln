@@ -27,12 +27,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightBuzz.Vitruvius", "Ligh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightBuzz.Vitruvius.WPF", "LightBuzz.Vitruvius.WPF\LightBuzz.Vitruvius.WPF.csproj", "{8BAE0B01-2DD9-44AD-824E-5FE63C0F64D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{79760C7C-158B-49AC-8F41-87FC18C0830D}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Users\yantze\Desktop\doc\2466.flv = C:\Users\yantze\Desktop\doc\2466.flv
-		C:\Users\yantze\Desktop\doc\vcastr22.swf = C:\Users\yantze\Desktop\doc\vcastr22.swf
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
