@@ -10,7 +10,7 @@
 - HandTrackingFramework 手势识别，共八个基本手势
 
 ## 成果展示
-<embed src="http://player.youku.com/player.php/sid/XOTU1MDI2MzY0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+[打开新页面播放视频](http://v.youku.com/v_show/id_XOTU1MDI2MzY0.html)
 <!--
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
     codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
@@ -27,7 +27,6 @@
 -->
 
 ## 视频说明
-[演示视频](http://raw.github.com/yantze/kinect_arduino/master/doc/2466.flv)
 
 1. 先左右上下控制机械手臂左右上下运动
 2. 到了27秒左右，使用T型姿势，使机械手臂停止交互运动
@@ -37,5 +36,7 @@
     3. 右手向左臂方向滑动，电脑屏幕显示为左滑
     4. 左手向右臂方向滑动，电脑屏幕显示为右滑
 4. 执行T姿势，重新启动并控制机械手臂，使其慢速左右和上下
+
+[下载演示视频](http://raw.github.com/yantze/kinect_arduino/master/doc/2466.flv)
 
 
