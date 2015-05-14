@@ -10,6 +10,8 @@
 - HandTrackingFramework 手势识别，共八个基本手势
 
 ## 成果展示
+<embed src="http://player.youku.com/player.php/sid/XOTU1MDI2MzY0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<!--
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
     codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
     height="20" width="20"> 
@@ -22,6 +24,7 @@
     quality="high" width="800" height="450"> 
 </embed> 
 </object>
+-->
 
 ## 视频说明
 [演示视频](http://raw.github.com/yantze/kinect_arduino/master/doc/2466.flv)

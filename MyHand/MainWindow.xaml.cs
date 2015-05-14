@@ -118,7 +118,7 @@ namespace MyHand
             _continue = true;
             _wait = false;
             _useNetPort = false;
-            portChat = new SerialPort("COM3", 9600, Parity.None, 8);
+            portChat = new SerialPort("COM4", 9600, Parity.None, 8);
             //client = new TcpClient("10.10.100.254", 8899);
             
             portChatThread = new Thread(sendServo);
